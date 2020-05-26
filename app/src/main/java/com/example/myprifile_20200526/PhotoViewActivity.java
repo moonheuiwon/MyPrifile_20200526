@@ -5,6 +5,7 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
 import com.example.myprifile_20200526.databinding.ActivityPhotoViewBinding;
 
 public class PhotoViewActivity extends BaseActivity {
@@ -26,6 +27,9 @@ public class PhotoViewActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+
+        String url = getIntent().getStringExtra("imgUrl");
+        Glide.with(mContext).load(url).into(binding.photoView);
 
     }
 }

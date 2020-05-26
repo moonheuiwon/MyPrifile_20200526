@@ -29,6 +29,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, PhotoViewActivity.class);
+                intent.putExtra("imgUrl","https://img2.sbs.co.kr/img/sbs_cms/CH/2017/04/28/CH52785630_w300_h300.jpg");
                 startActivity(intent);
             }
         });
