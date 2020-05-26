@@ -5,6 +5,7 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
 import com.example.myprifile_20200526.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseActivity {
@@ -26,6 +27,8 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setValues() {
+
+        Glide.with(mContext).load("https://img2.sbs.co.kr/img/sbs_cms/CH/2017/04/28/CH52785630_w300_h300.jpg").into(binding.profilImg);
 
     }
 }
